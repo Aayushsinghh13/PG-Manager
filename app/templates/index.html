@@ -43,7 +43,7 @@
       .btn-primary{ background: linear-gradient(90deg, var(--brand-1), var(--brand-2)); color: white; box-shadow: 0 10px 30px rgba(var(--brand-1-rgb),0.12); }
       .btn-outline{ background: white; color: #0f172a; border: 1px solid rgba(var(--nav-900-rgb),0.08); }
       .accent-pill{ background: linear-gradient(90deg, var(--brand-1), var(--brand-2)); color: white; }
-      .bg-footer{ background: linear-gradient(180deg, rgba(var(--nav-900-rgb),1) 0%, rgba(12,14,25,1) 100%); }
+      .bg-footer{ background: linear-gradient(180deg, #0f172a 0%, #020617 100%); }
       .badge-nav{ background: rgba(var(--nav-900-rgb),0.06); color: var(--nav-900); }
       .text-nav{ color: var(--nav-900); }
       .badge-brand{ background: linear-gradient(90deg, rgba(var(--brand-1-rgb),0.07), rgba(var(--brand-2-rgb),0.07)); color: var(--brand-1); }
@@ -190,28 +190,23 @@
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="py-20 bg-white relative">
+    <section id="features" class="py-20 bg-purple-50 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Everything You Need
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+            Explore our <span class="text-brand1">features</span>
           </h2>
-          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-            Tailored features for both Property Owners and Tenants to make life
-            easier.
+          <p class="text-xl text-slate-600 max-w-2xl mx-auto">
+            Tailored features for both Property Owners and Tenants to make life easier.
           </p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-12">
+        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <!-- Owners Features -->
-          <div
-            class="card-nav rounded-3xl p-8 hover:shadow-xl transition-all duration-300 group"
-          >
-            <div
-              class="inline-flex items-center gap-3 mb-6 badge-nav text-nav px-4 py-2 rounded-full font-semibold text-sm"
-            >
+          <div class="bg-white border border-gray-200 shadow-sm rounded-2xl p-8 flex flex-col h-full hover:shadow-md transition-shadow duration-300">
+            <div class="w-12 h-12 badge-nav rounded-xl flex items-center justify-center text-nav mb-6">
               <svg
-                class="w-5 h-5"
+                class="w-6 h-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -223,64 +218,62 @@
                   d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
                 />
               </svg>
-              For Owners
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">
-              Manage with Ease
+            
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">
+              For Owners
             </h3>
-            <ul class="space-y-4">
+            <p class="text-slate-600 mb-6">Manage your property efficiently with our comprehensive tools.</p>
+            
+            <ul class="space-y-4 mb-8 flex-grow">
               <li class="flex items-start">
-                <div
-                  class="shrink-0 w-6 h-6 rounded-full bg-brand1 flex items-center justify-center text-white mt-0.5"
-                >
-                  ✓
+                <div class="shrink-0 w-5 h-5 rounded-full bg-green-100 flex items-center justify-center text-green-600 mt-0.5">
+                  <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
                 </div>
-                <span class="ml-3 text-gray-700"
-                  >Digital Rent Collection & Tracking</span
-                >
+                <span class="ml-3 text-slate-700 text-sm font-medium">Digital Rent Collection</span>
               </li>
               <li class="flex items-start">
-                <div
-                  class="shrink-0 w-6 h-6 rounded-full bg-brand1 flex items-center justify-center text-white mt-0.5"
-                >
-                  ✓
+                <div class="shrink-0 w-5 h-5 rounded-full bg-green-100 flex items-center justify-center text-green-600 mt-0.5">
+                  <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
                 </div>
-                <span class="ml-3 text-gray-700"
-                  >Room & Bed Inventory Management</span
-                >
+                <span class="ml-3 text-slate-700 text-sm font-medium">Inventory Management</span>
               </li>
               <li class="flex items-start">
-                <div
-                  class="shrink-0 w-6 h-6 rounded-full bg-brand1 flex items-center justify-center text-white mt-0.5"
-                >
-                  ✓
+                <div class="shrink-0 w-5 h-5 rounded-full bg-green-100 flex items-center justify-center text-green-600 mt-0.5">
+                  <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
                 </div>
-                <span class="ml-3 text-gray-700"
-                  >Tenant Onboarding & Documents</span
-                >
+                <span class="ml-3 text-slate-700 text-sm font-medium">Tenant Onboarding</span>
               </li>
-              <li class="flex items-start">
-                <div
-                  class="shrink-0 w-6 h-6 rounded-full bg-brand1 flex items-center justify-center text-white mt-0.5"
-                >
-                  ✓
+               <li class="flex items-start">
+                <div class="shrink-0 w-5 h-5 rounded-full bg-green-100 flex items-center justify-center text-green-600 mt-0.5">
+                  <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
                 </div>
-                <span class="ml-3 text-gray-700"
-                  >Automated Reminders & Notifications</span
-                >
+                <span class="ml-3 text-slate-700 text-sm font-medium">Automated Notifications</span>
               </li>
             </ul>
+
+            <div class="mt-auto">
+              <button type="button" class="flex items-center flex-wrap justify-between gap-2 border border-blue-100 cursor-pointer text-[15px] font-medium rounded-3xl pl-5 pr-3 h-14 w-full hover:bg-blue-50 transition-all duration-300 text-slate-800">
+                Get Started
+                <div class="w-11 h-11 rounded-full bg-blue-100 flex justify-center items-center">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask x="0" y="0" width="18" height="18">
+                      <rect width="18" height="18" fill="#D9D9D9"></rect>
+                    </mask>
+                    <g mask="url(#mask0_2085_52)">
+                      <path d="M12.1313 9.75H3V8.25H12.1313L7.93125 4.05L9 3L15 9L9 15L7.93125 13.95L12.1313 9.75Z" fill="#222222"></path>
+                    </g>
+                  </svg>
+                </div>
+              </button>
+            </div>
           </div>
 
           <!-- Tenants Features -->
-          <div
-            class="card-brand rounded-3xl p-8 hover:shadow-xl transition-all duration-300 group"
-          >
-            <div
-              class="inline-flex items-center gap-3 mb-6 badge-brand text-brand1 px-4 py-2 rounded-full font-semibold text-sm"
-            >
+           <div class="bg-white border border-gray-200 shadow-sm rounded-2xl p-8 flex flex-col h-full hover:shadow-md transition-shadow duration-300">
+            <div class="w-12 h-12 badge-brand rounded-xl flex items-center justify-center text-brand1 mb-6">
               <svg
-                class="w-5 h-5"
+                class="w-6 h-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -292,53 +285,55 @@
                   d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
                 />
               </svg>
-              For Tenants
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">
-              Stay Comfortably
+            
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">
+               For Tenants
             </h3>
-            <ul class="space-y-4">
+            <p class="text-slate-600 mb-6">Find your perfect stay and live comfortably.</p>
+            
+            <ul class="space-y-4 mb-8 flex-grow">
               <li class="flex items-start">
-                <div
-                  class="shrink-0 w-6 h-6 rounded-full bg-brand1 flex items-center justify-center text-white mt-0.5"
-                >
-                  ✓
+                <div class="shrink-0 w-5 h-5 rounded-full bg-pink-100 flex items-center justify-center text-pink-500 mt-0.5">
+                  <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
                 </div>
-                <span class="ml-3 text-gray-700"
-                  >Find PGs by Location & Amenities</span
-                >
+                <span class="ml-3 text-slate-700 text-sm font-medium">Find PGs Nearby</span>
               </li>
               <li class="flex items-start">
-                <div
-                  class="shrink-0 w-6 h-6 rounded-full bg-brand1 flex items-center justify-center text-white mt-0.5"
-                >
-                  ✓
+                <div class="shrink-0 w-5 h-5 rounded-full bg-pink-100 flex items-center justify-center text-pink-500 mt-0.5">
+                  <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
                 </div>
-                <span class="ml-3 text-gray-700"
-                  >Online Booking & Payments</span
-                >
+                <span class="ml-3 text-slate-700 text-sm font-medium">Online Payments</span>
               </li>
               <li class="flex items-start">
-                <div
-                  class="shrink-0 w-6 h-6 rounded-full bg-brand1 flex items-center justify-center text-white mt-0.5"
-                >
-                  ✓
+                <div class="shrink-0 w-5 h-5 rounded-full bg-pink-100 flex items-center justify-center text-pink-500 mt-0.5">
+                  <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
                 </div>
-                <span class="ml-3 text-gray-700"
-                  >Rise Complaints & Requests</span
-                >
+                <span class="ml-3 text-slate-700 text-sm font-medium">Raise Complaints</span>
               </li>
-              <li class="flex items-start">
-                <div
-                  class="shrink-0 w-6 h-6 rounded-full bg-brand1 flex items-center justify-center text-white mt-0.5"
-                >
-                  ✓
+               <li class="flex items-start">
+                <div class="shrink-0 w-5 h-5 rounded-full bg-pink-100 flex items-center justify-center text-pink-500 mt-0.5">
+                   <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
                 </div>
-                <span class="ml-3 text-gray-700"
-                  >View Food Menus & Notices</span
-                >
+                <span class="ml-3 text-slate-700 text-sm font-medium">View Menus & Notices</span>
               </li>
             </ul>
+
+            <div class="mt-auto">
+              <button type="button" class="flex items-center flex-wrap justify-between gap-2 border border-pink-100 cursor-pointer text-[15px] font-medium rounded-3xl pl-5 pr-3 h-14 w-full hover:bg-pink-50 transition-all duration-300 text-slate-800">
+                Explore
+                <div class="w-11 h-11 rounded-full bg-pink-100 flex justify-center items-center">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask x="0" y="0" width="18" height="18">
+                      <rect width="18" height="18" fill="#D9D9D9"></rect>
+                    </mask>
+                    <g mask="url(#mask0_2085_52)">
+                      <path d="M12.1313 9.75H3V8.25H12.1313L7.93125 4.05L9 3L15 9L9 15L7.93125 13.95L12.1313 9.75Z" fill="#222222"></path>
+                    </g>
+                  </svg>
+                </div>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -539,88 +534,147 @@
     <!-- Footer -->
     <footer class="bg-footer text-white pt-16 pb-8">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-          <div class="col-span-1 md:col-span-1">
-            <div class="flex items-center gap-2 mb-4">
-              <div
-                class="w-8 h-8 rounded brand-avatar flex items-center justify-center font-bold"
-              >
-                P
-              </div>
-              <span class="text-xl font-bold">PG-Manager</span>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
+          <!-- Left Side: Links Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-8 mb-8 lg:mb-0">
+            <!-- Company -->
+            <div>
+              <h4 class="font-bold mb-4 text-white">Company</h4>
+              <ul class="space-y-2 text-sm text-gray-400">
+                <li>
+                  <a href="#" class="hover:text-brand1 transition-colors"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-brand1 transition-colors"
+                    >Careers</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-brand1 transition-colors"
+                    >Premium Tools</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-brand1 transition-colors"
+                    >Blogs</a
+                  >
+                </li>
+              </ul>
             </div>
-            <p class="text-gray-400 text-sm">
-              Modern solution for PG management. Simplifying stays for everyone.
+            <!-- Pages -->
+            <div>
+              <h4 class="font-bold mb-4 text-white">Pages</h4>
+              <ul class="space-y-2 text-sm text-gray-400">
+                <li>
+                  <a
+                    href="{{ url_for('main.login') }}"
+                    class="hover:text-brand1 transition-colors"
+                    >Login</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="{{ url_for('main.signup') }}"
+                    class="hover:text-brand1 transition-colors"
+                    >Register</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-brand1 transition-colors"
+                    >Add List</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-brand1 transition-colors"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Legal -->
+            <div>
+              <h4 class="font-bold mb-4 text-white">Legal</h4>
+              <ul class="space-y-2 text-sm text-gray-400">
+                <li>
+                  <a href="#" class="hover:text-brand1 transition-colors"
+                    >Terms</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-brand1 transition-colors"
+                    >Privacy</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-brand1 transition-colors"
+                    >Teams</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="hover:text-brand1 transition-colors"
+                    >About Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right Side: Subscribe -->
+          <div class="lg:ml-auto max-w-sm w-full">
+            <h4 class="font-bold mb-4 text-white">Subscribe</h4>
+            <p class="text-gray-400 text-sm mb-6">
+              Get access to subscriber exclusive deals and be the first who gets
+              informed about fresh sales.
             </p>
-          </div>
-          <div>
-            <h4 class="font-bold mb-4">Product</h4>
-            <ul class="space-y-2 text-gray-400 text-sm">
-              <li>
-                <a href="#" class="hover:text-white transition-colors"
-                  >Features</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-white transition-colors"
-                  >Pricing</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-white transition-colors"
-                  >Safety</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-bold mb-4">Company</h4>
-            <ul class="space-y-2 text-gray-400 text-sm">
-              <li>
-                <a href="#" class="hover:text-white transition-colors"
-                  >About Us</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-white transition-colors"
-                  >Contact</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-white transition-colors"
-                  >Privacy Policy</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-bold mb-4">Connect</h4>
-            <div class="flex space-x-4">
-              <a
-                href="#"
-                class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center social-hover transition-colors"
-                >𝕏</a
-              >
-              <a
-                href="#"
-                class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center social-hover transition-colors"
-                >in</a
-              >
-              <a
-                href="#"
-                class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center social-hover transition-colors"
-                >f</a
-              >
+            <div class="flex flex-col gap-4">
+              <div class="relative">
+                <label for="email-subscribe" class="sr-only">Your Email</label>
+                <div class="flex gap-2">
+                  <input
+                    type="email"
+                    id="email-subscribe"
+                    placeholder="someone@example.com"
+                    class="w-full bg-gray-800/50 border border-gray-700 text-white text-sm rounded-lg focus:ring-brand1 focus:border-brand1 block p-2.5 placeholder-gray-500 outline-none transition-all focus:bg-gray-800"
+                  />
+                  <button
+                    class="btn-primary px-5 py-2.5 rounded-lg font-medium text-sm hover:opacity-95 whitespace-nowrap shadow-lg hover:shadow-brand1/20 transition-all duration-300"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+              <div class="flex items-start gap-2">
+                <div class="flex items-center h-5">
+                  <input
+                    id="terms"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 border border-gray-600 rounded bg-gray-700 focus:ring-3 focus:ring-brand1 ring-offset-gray-800 cursor-pointer accent-[#D61C4E]"
+                  />
+                </div>
+                <label for="terms" class="text-xs text-gray-400 font-medium select-none cursor-pointer">
+                  I agree with the
+                  <a href="#" class="text-brand1 hover:underline"
+                    >terms and conditions</a
+                  >
+                </label>
+              </div>
             </div>
           </div>
         </div>
+
         <div
           class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm"
         >
-          &copy; 2024 PG-Manager. All rights reserved.
+          &copy; <span id="year"></span> PG-Manager. All Rights Reserved.
         </div>
       </div>
     </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 
     <script>
       // Typing Animation
