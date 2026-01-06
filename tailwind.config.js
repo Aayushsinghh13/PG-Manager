@@ -1,10 +1,20 @@
-export default {
+module.exports = {
   content: [
-    "./src/html/**/*.html",
-    "./src/js/**/*.js"
+    './app/templates/**/*.html',
+    './app/**/*.py',
+    './src/**/*.html',
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        shine: 'shine 1s',
+      },
+      keyframes: {
+        shine: {
+          '100%': { left: '125%' },
+        },
+      },
+    },
   },
   plugins: [],
-}
+};
